@@ -1,0 +1,13 @@
+.hero-bg {
+  background-image: linear-gradient(to top, rgba(16, 29, 34, 0.8) 0%, rgba(16, 29, 34, 0.2) 100%), url('/screen.png');
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px 0 rgba(16,29,34,0.25);
+  transition: box-shadow 0.3s;
+}
+.hero-bg:hover {
+  box-shadow: 0 16px 48px 0 rgba(16,29,34,0.35);
+}

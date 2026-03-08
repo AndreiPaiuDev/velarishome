@@ -1,0 +1,98 @@
+/* Newsletter.module.css - Custom styles based on provided design */
+
+.newsletterSection {
+  padding: 64px 24px;
+  background: transparent;
+}
+
+.newsletterContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #101d22 80%, #008c99 100%);
+  border-radius: 48px;
+  padding: 64px 32px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 48px 0 rgba(16,29,34,0.10);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.newsletterGradient {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100%;
+  opacity: 0.18;
+  pointer-events: none;
+  background: linear-gradient(135deg, #008c99 0%, #d2e037 60%, #b68d40 100%);
+  filter: blur(80px);
+  z-index: 1;
+}
+
+.newsletterContent {
+  position: relative;
+  z-index: 2;
+  max-width: 480px;
+}
+
+.newsletterTitle {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 18px;
+  line-height: 1.1;
+}
+.newsletterTitle span {
+  color: #13b6ec;
+  font-style: italic;
+}
+
+.newsletterDesc {
+  color: #bfc9d1;
+  font-size: 1.1rem;
+  margin-bottom: 32px;
+}
+
+.newsletterForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media (min-width: 600px) {
+  .newsletterForm {
+    flex-direction: row;
+  }
+}
+
+.newsletterInput {
+  flex: 1 1 200px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 16px;
+  padding: 18px 24px;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+.newsletterInput:focus {
+  border: 1.5px solid #13b6ec;
+}
+
+.newsletterButton {
+  background: #13b6ec;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 16px;
+  padding: 18px 32px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.newsletterButton:hover {
+  background: #0ea6d6;
+}

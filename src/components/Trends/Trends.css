@@ -1,0 +1,149 @@
+/* Trends / Color Narrative section */
+.trends-section {
+  padding: 80px 24px;
+  background: #fff;
+}
+
+.trends-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.trends-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.trends-eyebrow {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #13b6ec;
+  margin-bottom: 14px;
+}
+
+.trends-header h2 {
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: #222;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+.trends-header p {
+  color: #6b7680;
+  font-size: 0.97rem;
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.trends-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.trend-card-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.trend-swatch {
+  height: 200px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  margin-bottom: 24px;
+  transition: transform 0.25s ease;
+  text-align: center;
+}
+
+.trend-card-wrap:hover .trend-swatch {
+  transform: translateY(-6px);
+}
+
+.trend-swatch-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  opacity: 0.82;
+  margin-bottom: 8px;
+}
+
+.trend-swatch h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+/* Swatch colours */
+.swatch-teal {
+  background: #008c99;
+  color: #fff;
+}
+
+.swatch-lime {
+  background: #d2e037;
+  color: #1a1a1a;
+}
+
+.swatch-ochre {
+  background: #b68d40;
+  color: #fff;
+}
+
+.trend-subtitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.trend-desc {
+  font-size: 0.92rem;
+  color: #6b7680;
+  line-height: 1.65;
+}
+
+.trends-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+.trends-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #101d22;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 999px;
+  padding: 14px 32px;
+  text-decoration: none;
+  box-shadow: 0 2px 16px 0 rgba(16, 29, 34, 0.12);
+  transition: background 0.18s, gap 0.18s;
+}
+.trends-cta-btn:hover {
+  background: #008c99;
+  gap: 12px;
+}
+.trends-cta-btn .material-symbols-outlined {
+  font-size: 1.15em;
+}
+
+@media (max-width: 900px) {
+  .trends-grid {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}

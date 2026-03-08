@@ -1,0 +1,161 @@
+/* Hero.module.css - Matches the provided screenshot */
+
+.heroSection {
+  position: relative;
+  min-height: 90vh;
+  width: 100vw;
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  overflow: hidden;
+}
+
+.heroBgWrap {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.heroBg {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(16, 29, 34, 0.72) 0%, rgba(16, 29, 34, 0.12) 60%, rgba(16, 29, 34, 0.04) 100%),
+    url('../../images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: #1a2a30;
+}
+
+.heroContentWrap {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0 64px 0;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.heroContent {
+  max-width: 480px;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 32px;
+}
+
+.heroEyebrow {
+  color: #13b6ec;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.16em;
+  margin-bottom: 18px;
+  display: block;
+}
+
+.heroTitle {
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: 900;
+  line-height: 1.08;
+  margin-bottom: 18px;
+  letter-spacing: -0.02em;
+}
+.heroTitle span {
+  background: linear-gradient(90deg, #008c99 0%, #d2e037 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-style: italic;
+  font-weight: 800;
+}
+
+.heroDesc {
+  color: #e2e8f0;
+  font-size: 1.08rem;
+  font-weight: 400;
+  margin-bottom: 36px;
+  line-height: 1.6;
+}
+
+.heroActions {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.heroButtonPrimary {
+  background: #13b6ec;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.08rem;
+  border: none;
+  border-radius: 999px;
+  padding: 14px 32px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 2px 12px 0 rgba(19,182,236,0.10);
+  cursor: pointer;
+  transition: background 0.18s;
+}
+.heroButtonPrimary:hover {
+  background: #0ea6d6;
+}
+
+.heroButtonSecondary {
+  background: #fff;
+  color: #222;
+  font-weight: 700;
+  font-size: 1.08rem;
+  border: none;
+  border-radius: 999px;
+  padding: 14px 32px;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+  box-shadow: 0 2px 12px 0 rgba(16,29,34,0.06);
+}
+.heroButtonSecondary:hover {
+  background: #f6f8f8;
+  color: #13b6ec;
+}
+
+.heroButtonPrimary .material-symbols-outlined {
+  font-size: 1.2em;
+  margin-left: 6px;
+}
+
+@media (max-width: 900px) {
+  .heroContentWrap {
+    padding: 0 0 32px 0;
+  }
+  .heroContent {
+    max-width: 100%;
+    padding-left: 16px;
+  }
+  .heroTitle {
+    font-size: 2.1rem;
+  }
+}
+@media (max-width: 600px) {
+  .heroSection {
+    min-height: 340px;
+    height: 60vh;
+  }
+  .heroTitle {
+    font-size: 1.3rem;
+  }
+  .heroContent {
+    padding-left: 8px;
+  }
+  .heroActions button {
+    padding: 10px 16px;
+    font-size: 0.98rem;
+  }
+}
